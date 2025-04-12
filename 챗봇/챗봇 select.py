@@ -6,7 +6,7 @@ data1, data2, data3, data4 = "", "", "", ""
 row=None
 
 # 메인 코드
-conn = pymysql.connect(host='localhost', user='root', password='202003446', db='chattest', charset='utf8')
+conn = pymysql.connect(host='localhost', user='root', password='', db='chattest', charset='utf8')
 cur = conn.cursor()
 
 print("궁금한 키워드를 물어보세요.")
