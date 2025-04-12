@@ -24,7 +24,7 @@ with conn:
         result = cur.fetchall()
         print(result)
 
-SQLALCHEMY_DATABASE_URI="mysql+mysqlconnector://dosly2:maeil123@dosly2.cafe24.com:3306/dosly2"
+SQLALCHEMY_DATABASE_URI="---"
 engine = sqlalchemy.create_engine(SQLALCHEMY_DATABASE_URI,echo=False)
 qkeyword_data = pd.read_sql("SELECT * from quest",engine)
 print(qkeyword_data)
