@@ -12,7 +12,7 @@ okt=Okt()
 con, cur = None, None
 
 
-SQLALCHEMY_DATABASE_URI="mysql+mysqlconnector://dosly2:maeil123@dosly2.cafe24.com:3306/dosly2"
+SQLALCHEMY_DATABASE_URI="---"
 engine = sqlalchemy.create_engine(SQLALCHEMY_DATABASE_URI,echo=False)
 qkeyword_data = pd.read_sql("SELECT * from word",engine)
 #print(qkeyword_data)
@@ -69,7 +69,7 @@ results=[]
 resultf=[]
 def getsql(sql): #sql문 실행 후 그 값을 results 배열에 넣는 함수.
     
-    conn = pymysql.connect(host='183.111.242.56', user='dosly2', password='maeil123',db='dosly2',port=3306, charset='utf8')
+    conn = pymysql.connect(host='', user='', password='',db='',port=, charset='')
 
     conn.query("set character_set_connection=utf8;")
     conn.query("set character_set_server=utf8;")
@@ -88,7 +88,7 @@ def getsql(sql): #sql문 실행 후 그 값을 results 배열에 넣는 함수.
     
 def getsql2(sql2): #sql문 실행 후 그 값을 results 배열에 넣는 함수.
     
-    conn = pymysql.connect(host='183.111.242.56', user='dosly2', password='maeil123',db='dosly2',port=3306, charset='utf8')
+    conn = pymysql.connect(host='', user='', password='',db='',port=, charset='')
 
     conn.query("set character_set_connection=utf8;")
     conn.query("set character_set_server=utf8;")
